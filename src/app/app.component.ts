@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'rumeStore';
+  title = 'Rume Store';
+  toggleMenu: boolean = true;
+  
+  toggle(){
+    this.toggleMenu = !this.toggleMenu;
+  }
 }

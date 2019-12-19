@@ -1,5 +1,6 @@
-# RumeStore
+# Rume Store
 
+Front end para administrar el proyecto RumeStore
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
 
 ## Development server
@@ -25,3 +26,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Build and push the docker image: 
+
+```bash
+$ docker build -t isaac9422/rumestore .
+$ docker push isaac9422/rumestore
+```
+
+## Run the container in a server:
+
+```bash
+$ docker run -d -p 8140:80 --name rumestore --restart always isaac9422/rumestore
+```
+
